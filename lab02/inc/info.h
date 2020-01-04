@@ -1,0 +1,10 @@
+#ifndef __INFO_H__
+#define __INFO_H__
+
+#include <stdio.h>
+#include "country.h"
+
+void help(void);
+void my_perror(int errcode);
+
+#endif // __INFO_H__

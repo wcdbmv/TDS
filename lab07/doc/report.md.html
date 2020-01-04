@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>report.md</title><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","output/HTML-CSS"],
+    extensions: ["[a11y]/accessibility-menu.js"],
+    'HTML-CSS': {
+      availableFonts: [],
+      webFont: 'TeX',
+      undefinedFamily: "serif",
+      mtextFontInherit: true,
+    },
+    TeX: {
+  "Macros": {},
+  "equationNumbers": {},
+  "extensions": [
+    "AMSmath.js",
+    "AMSsymbols.js",
+    "noErrors.js",
+    "noUndefined.js"
+  ]
+},
+    showMathMenu: true
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
+    <style>.emoji {
+  max-width: 1em !important;
+}
+del {
+  text-decoration: none;
+  position: relative;
+}
+del::after {
+  border-bottom: 1px solid black;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+ul.contains-task-list li.task-list-item {
+  position: relative;
+  list-style-type: none;
+}
+ul.contains-task-list li.task-list-item input.task-list-item-checkbox {
+  position: absolute;
+  transform: translateX(-100%);
+  width: 30px;
+}
+span.critic.comment {
+  position: relative;
+}
+span.critic.comment::before {
+  content: '\1f4ac';
+  position: initial;
+}
+span.critic.comment > span {
+  display: none;
+}
+span.critic.comment:hover > span {
+  display: initial;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  max-height: 4em;
+  overflow: auto;
+}
+span.critic.comment:focus > span {
+  display: initial;
+  text-decoration: underline;
+  position: initial;
+  top: auto;
+  left: auto;
+  border: initial;
+  border-radius: initial;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+
+body {
+  overflow: initial !important;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+  padding: 30px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+body > *:first-child {
+  margin-top: 0 !important;
+}
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+body .absent {
+  color: #c00;
+}
+body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+body .anchor:focus {
+  outline: none;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+body h1 .octicon-link,
+body h2 .octicon-link,
+body h3 .octicon-link,
+body h4 .octicon-link,
+body h5 .octicon-link,
+body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+body h1:hover .anchor,
+body h2:hover .anchor,
+body h3:hover .anchor,
+body h4:hover .anchor,
+body h5:hover .anchor,
+body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+body h1:hover .anchor .octicon-link,
+body h2:hover .anchor .octicon-link,
+body h3:hover .anchor .octicon-link,
+body h4:hover .anchor .octicon-link,
+body h5:hover .anchor .octicon-link,
+body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+body h1 tt,
+body h2 tt,
+body h3 tt,
+body h4 tt,
+body h5 tt,
+body h6 tt,
+body h1 code,
+body h2 code,
+body h3 code,
+body h4 code,
+body h5 code,
+body h6 code {
+  font-size: inherit;
+}
+body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+body h1 .anchor {
+  line-height: 1;
+}
+body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+body h2 .anchor {
+  line-height: 1;
+}
+body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+body h3 .anchor {
+  line-height: 1.2;
+}
+body h4 {
+  font-size: 1.25em;
+}
+body h4 .anchor {
+  line-height: 1.2;
+}
+body h5 {
+  font-size: 1em;
+}
+body h5 .anchor {
+  line-height: 1.1;
+}
+body h6 {
+  font-size: 1em;
+  color: #777;
+}
+body h6 .anchor {
+  line-height: 1.1;
+}
+body p,
+body blockquote,
+body ul,
+body ol,
+body dl,
+body table,
+body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+body ul,
+body ol {
+  padding-left: 2em;
+}
+body ul.no-list,
+body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+body ul ul,
+body ul ol,
+body ol ol,
+body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body li > p {
+  margin-top: 16px;
+}
+body dl {
+  padding: 0;
+}
+body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+body blockquote > :first-child {
+  margin-top: 0;
+}
+body blockquote > :last-child {
+  margin-bottom: 0;
+}
+body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+body table th {
+  font-weight: bold;
+}
+body table th,
+body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .emoji {
+  max-width: none;
+}
+body span.frame {
+  display: block;
+  overflow: hidden;
+}
+body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+body span.frame span img {
+  display: block;
+  float: left;
+}
+body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #333;
+}
+body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+body span.float-left span {
+  margin: 13px 0 0;
+}
+body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+body code,
+body tt {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+body code:before,
+body tt:before,
+body code:after,
+body tt:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+body code br,
+body tt br {
+  display: none;
+}
+body del code {
+  text-decoration: inherit;
+}
+body pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+body .highlight {
+  margin-bottom: 16px;
+}
+body .highlight pre,
+body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+body pre {
+  word-wrap: normal;
+}
+body pre code,
+body pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+body pre code:before,
+body pre tt:before,
+body pre code:after,
+body pre tt:after {
+  content: normal;
+}
+body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+span.critic.comment > span {
+  background-color: #fff;
+}
+a {
+  color: #337ab7;
+}
+
+pre.editor-colors {
+  background-color: white;
+  color: #555;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .gutter {
+  color: #555;
+  background: white;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #e87b00;
+}
+pre.editor-colors .invisible {
+  color: #555;
+}
+pre.editor-colors .selection .region {
+  background-color: #e1e1e1;
+}
+pre.editor-colors .bracket-matcher .region {
+  background-color: #C9C9C9;
+  opacity: .7;
+  border-bottom: 0 none;
+}
+pre.editor-colors.is-focused .cursor {
+  border-color: black;
+}
+pre.editor-colors.is-focused .selection .region {
+  background-color: #afc4da;
+}
+pre.editor-colors.is-focused .line-number.cursor-line-no-selection,
+pre.editor-colors.is-focused .line.cursor-line {
+  background-color: rgba(255, 255, 134, 0.34);
+}
+.syntax--comment {
+  color: #999988;
+  font-style: italic;
+}
+.syntax--string {
+  color: #D14;
+}
+.syntax--string .syntax--source,
+.syntax--string .syntax--meta.syntax--embedded.syntax--line {
+  color: #5A5A5A;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded {
+  color: #920B2D;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded .syntax--source {
+  color: #920B2D;
+}
+.syntax--constant.syntax--numeric {
+  color: #D14;
+}
+.syntax--constant.syntax--language {
+  color: #606aa1;
+}
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other {
+  color: #606aa1;
+}
+.syntax--constant.syntax--symbol {
+  color: #990073;
+}
+.syntax--constant.syntax--numeric.syntax--line-number.syntax--find-in-files .syntax--match {
+  color: rgba(143, 190, 0, 0.63);
+}
+.syntax--variable {
+  color: #008080;
+}
+.syntax--variable.syntax--parameter {
+  color: #606aa1;
+}
+.syntax--keyword {
+  color: #222;
+  font-weight: bold;
+}
+.syntax--keyword.syntax--unit {
+  color: #445588;
+}
+.syntax--keyword.syntax--special-method {
+  color: #0086B3;
+}
+.syntax--storage {
+  color: #222;
+}
+.syntax--storage.syntax--type {
+  color: #222;
+}
+.syntax--entity.syntax--name.syntax--class {
+  text-decoration: underline;
+  color: #606aa1;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  text-decoration: underline;
+  color: #606aa1;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #900;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #008080;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #458;
+  font-weight: bold;
+}
+.syntax--entity.syntax--name.syntax--filename.syntax--find-in-files {
+  color: #E6DB74;
+}
+.syntax--support.syntax--constant,
+.syntax--support.syntax--function,
+.syntax--support.syntax--type {
+  color: #458;
+}
+.syntax--support.syntax--class {
+  color: #008080;
+}
+.syntax--invalid {
+  color: #F8F8F0;
+  background-color: #00A8C6;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #F8F8F0;
+  background-color: #8FBE00;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json .syntax--punctuation.syntax--string {
+  color: #000080;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: #d14;
+}
+.syntax--meta.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header {
+  color: #75715E;
+}
+.syntax--css.syntax--support.syntax--property-name {
+  font-weight: bold;
+  color: #333;
+}
+.syntax--css.syntax--constant {
+  color: #099;
+}
+.syntax--source.syntax--gfm {
+  color: #444;
+}
+.syntax--gfm .syntax--markup.syntax--heading {
+  color: #111;
+}
+.syntax--gfm .syntax--link {
+  color: #888;
+}
+.syntax--gfm .syntax--variable.syntax--list {
+  color: #888;
+}
+.syntax--markdown .syntax--paragraph {
+  color: #444;
+}
+.syntax--markdown .syntax--heading {
+  color: #111;
+}
+.syntax--markdown .syntax--link {
+  color: #888;
+}
+.syntax--markdown .syntax--link .syntax--string {
+  color: #888;
+}
+</style>
+
+  </head>
+  <body>
+    <h1>Отчёт</h1>
+<p>Лабораторная работа 7 по предмету «Типы и структуры данных».<br>
+<strong>Керимов Ахмед</strong>, ИУ7-34Б, вариант 2.</p>
+<p><strong>Цель работы</strong> — реализовать алгоритмы обработки графовых структур: поиск
+различных путей, проверка связности, построение остовых деревьев минимальной
+стоимости.</p>
+<h2>Техническое задание</h2>
+<ol>
+<li>Реализовать хранение, ввод, вывод и изменение графов.</li>
+<li>Определить, является ли граф связным.</li>
+<li>Граф считать ориентированным.</li>
+</ol>
+<h2>Структуры данных</h2>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--keyword syntax--control">struct</span> <span class="syntax--support syntax--storage syntax--type">Graph</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> <span class="syntax--variable syntax--other syntax--member">n_vertices</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">vector</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&lt;</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">list</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&lt;</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&gt;</span> <span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&gt;</span> <span class="syntax--variable syntax--other syntax--member">adj</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""></span> 
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--entity syntax--name syntax--function">Graph</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> n_vertices<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""></span> 
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">void</span> <span class="syntax--entity syntax--name syntax--function">add_edge</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">void</span> <span class="syntax--entity syntax--name syntax--function">remove_edge</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""></span> 
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">void</span> <span class="syntax--entity syntax--name syntax--function">add_vertex</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">void</span> <span class="syntax--entity syntax--name syntax--function">remove_vertex</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">void</span> <span class="syntax--entity syntax--name syntax--function">swap_vertices</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""></span> 
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">bool</span> <span class="syntax--entity syntax--name syntax--function">vertex_exists</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--storage syntax--modifier">const</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">bool</span> <span class="syntax--entity syntax--name syntax--function">edge_exists</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--storage syntax--modifier">const</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">bool</span> <span class="syntax--entity syntax--name syntax--function">can_add_edge</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--storage syntax--modifier">const</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span></pre>
+<h2>Аварийные ситуации</h2>
+<ol>
+<li>Ввод неверной команды. Будет выведено сообщение об ошибке.</li>
+<li>Ввод несуществующего файла. Будет выведено сообщение об ошибке.</li>
+<li>Ввод несуществующей вершины. Будет выведено сообщение об ошибке.</li>
+<li>Ввод несуществующего ребра. Будет выведено сообщение об ошибке.</li>
+<li>Попытка дублирования ребра. Будет выведено сообщение об ошибке.</li>
+</ol>
+<h2>Алгоритмы</h2>
+<p>Базовые алгоритмы работы с орграфом.</p>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--support syntax--storage syntax--type">void</span> Graph<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--entity syntax--name syntax--function">add_edge</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>adj<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">push_back</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--support syntax--storage syntax--type">void</span> Graph<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--entity syntax--name syntax--function">remove_edge</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>adj<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">remove</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--support syntax--storage syntax--type">void</span> Graph<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--entity syntax--name syntax--function">add_vertex</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>adj<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">push_back</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--entity syntax--name syntax--function">list</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&lt;</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&gt;</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--support syntax--storage syntax--type">void</span> Graph<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--entity syntax--name syntax--function">remove_vertex</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> last <span class="syntax--keyword syntax--operator">=</span> n_vertices <span class="syntax--keyword syntax--operator">-</span> <span class="syntax--constant syntax--numeric syntax--decimal">1</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--entity syntax--name syntax--function">swap_vertices</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>v, last<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">for</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>v <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--numeric syntax--decimal">0</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span> v <span class="syntax--keyword syntax--operator">!=</span> last<span class="syntax--punctuation syntax--terminator syntax--statement">;</span> <span class="syntax--keyword syntax--operator">++</span>v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span>adj<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">remove</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>last<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>adj<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">pop_back</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--operator">--</span>n_vertices<span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--support syntax--storage syntax--type">void</span> Graph<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--entity syntax--name syntax--function">swap_vertices</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--entity syntax--name syntax--function">swap</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>adj<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span>, adj<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>w<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">for</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> x <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--numeric syntax--decimal">0</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span> x <span class="syntax--keyword syntax--operator">!=</span> n_vertices<span class="syntax--punctuation syntax--terminator syntax--statement">;</span> <span class="syntax--keyword syntax--operator">++</span>x<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">if</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>x <span class="syntax--keyword syntax--operator">==</span> v <span class="syntax--keyword syntax--operator">||</span> x <span class="syntax--keyword syntax--operator">==</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">continue</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">for</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--support syntax--storage syntax--type">auto</span><span class="syntax--keyword syntax--operator">&amp;</span> y : adj<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>x<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">if</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>y <span class="syntax--keyword syntax--operator">==</span> v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span>y <span class="syntax--keyword syntax--operator">=</span> w<span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">else</span> <span class="syntax--keyword syntax--control">if</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>y <span class="syntax--keyword syntax--operator">==</span> w<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span>y <span class="syntax--keyword syntax--operator">=</span> v<span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<p>Поиск компонент сильной связности.</p>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--support syntax--storage syntax--type">Graph</span> <span class="syntax--entity syntax--name syntax--function">transpose</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--support syntax--storage syntax--type">Graph</span> <span class="syntax--storage syntax--modifier">const</span><span class="syntax--keyword syntax--operator">&amp;</span> graph<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">Graph</span> t<span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>graph<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--variable syntax--other syntax--member">n_vertices</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">for</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--numeric syntax--decimal">0</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span> v <span class="syntax--keyword syntax--operator">!=</span> graph<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--variable syntax--other syntax--member">n_vertices</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span> <span class="syntax--keyword syntax--operator">++</span>v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">for</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--support syntax--storage syntax--type">auto</span> <span class="syntax--storage syntax--modifier">const</span> w : graph<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--variable syntax--other syntax--member">adj</span><span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span>t<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">add_edge</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>w, v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">return</span> t<span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--support syntax--storage syntax--type">void</span> <span class="syntax--entity syntax--name syntax--function">fill_order</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--support syntax--storage syntax--type">Graph</span> <span class="syntax--storage syntax--modifier">const</span><span class="syntax--keyword syntax--operator">&amp;</span> graph<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="leading-whitespace">                </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="leading-whitespace">                </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">vector</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&lt;</span><span class="syntax--support syntax--storage syntax--type">bool</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&gt;</span><span class="syntax--keyword syntax--operator">&amp;</span> visited<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="leading-whitespace">                </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">stack</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&lt;</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&gt;</span><span class="syntax--keyword syntax--operator">&amp;</span> stack<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>visited<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span> <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language syntax--boolean">true</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">for</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--support syntax--storage syntax--type">auto</span> <span class="syntax--storage syntax--modifier">const</span> w : graph<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--variable syntax--other syntax--member">adj</span><span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">if</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--keyword syntax--operator">!</span>visited<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>w<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--entity syntax--name syntax--function">fill_order</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>graph, w, visited, stack<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>stack<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">push</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--support syntax--storage syntax--type">void</span> <span class="syntax--entity syntax--name syntax--function">print_dfs</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--support syntax--storage syntax--type">Graph</span> <span class="syntax--storage syntax--modifier">const</span><span class="syntax--keyword syntax--operator">&amp;</span> graph<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="leading-whitespace">               </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="leading-whitespace">               </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">vector</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&lt;</span><span class="syntax--support syntax--storage syntax--type">bool</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&gt;</span><span class="syntax--keyword syntax--operator">&amp;</span> visited<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="leading-whitespace">               </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">ostream</span><span class="syntax--keyword syntax--operator">&amp;</span> os<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>visited<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span> <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language syntax--boolean">true</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>os <span class="syntax--keyword syntax--operator">&lt;&lt;</span> v <span class="syntax--keyword syntax--operator">&lt;&lt;</span> <span class="syntax--string syntax--quoted syntax--single"><span class="syntax--punctuation syntax--definition syntax--string">'</span> <span class="syntax--punctuation syntax--definition syntax--string">'</span></span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">for</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--support syntax--storage syntax--type">auto</span> <span class="syntax--storage syntax--modifier">const</span> w : graph<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--variable syntax--other syntax--member">adj</span><span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">if</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--keyword syntax--operator">!</span>visited<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>w<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--entity syntax--name syntax--function">print_dfs</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>graph, w, visited, os<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<pre class="editor-colors lang-c++"><span><span class="syntax--source syntax--cpp"><span class="syntax--comment syntax--block">// strongly connected components</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp">std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> <span class="syntax--entity syntax--name syntax--function">print_scc</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--support syntax--storage syntax--type">Graph</span> <span class="syntax--storage syntax--modifier">const</span><span class="syntax--keyword syntax--operator">&amp;</span> graph<span class="syntax--punctuation syntax--separator syntax--delimiter">,</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">ostream</span><span class="syntax--keyword syntax--operator">&amp;</span> os<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">stack</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&lt;</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&gt;</span> stack<span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">vector</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&lt;</span><span class="syntax--support syntax--storage syntax--type">bool</span><span class="syntax--punctuation syntax--definition syntax--template syntax--bracket syntax--angle">&gt;</span> visited<span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>graph<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--variable syntax--other syntax--member">n_vertices</span>, <span class="syntax--constant syntax--language syntax--boolean">false</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">for</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--numeric syntax--decimal">0</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span> v <span class="syntax--keyword syntax--operator">!=</span> graph<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--variable syntax--other syntax--member">n_vertices</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span> <span class="syntax--keyword syntax--operator">++</span>v<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">if</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--keyword syntax--operator">!</span>visited<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--entity syntax--name syntax--function">fill_order</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>graph, v, visited, stack<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""></span> 
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--support syntax--storage syntax--type">Graph</span> t <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--entity syntax--name syntax--function">transpose</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>graph<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""></span> 
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> scc <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--numeric syntax--decimal">0</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--entity syntax--name syntax--function">fill</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>visited<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">begin</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span>, visited<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">end</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span>, <span class="syntax--constant syntax--language syntax--boolean">false</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">while</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--keyword syntax--operator">!</span>stack<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">empty</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span>std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span><span class="syntax--support syntax--storage syntax--type">size_t</span> v <span class="syntax--keyword syntax--operator">=</span> stack<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">top</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span>stack<span class="syntax--keyword syntax--operator syntax--member">.</span><span class="syntax--entity syntax--name syntax--function">pop</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""></span> 
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">if</span> <span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span><span class="syntax--keyword syntax--operator">!</span>visited<span class="syntax--punctuation syntax--definition syntax--begin syntax--bracket syntax--square">[</span>v<span class="syntax--punctuation syntax--definition syntax--end syntax--bracket syntax--square">]</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly">{</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--entity syntax--name syntax--function">print_dfs</span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round">(</span>t, v, visited, os<span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round">)</span><span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span>os <span class="syntax--keyword syntax--operator">&lt;&lt;</span> std<span class="syntax--punctuation syntax--separator syntax--method syntax--double-colon">::</span>endl<span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--operator">++</span>scc<span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="hard-tab leading-whitespace">    </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="hard-tab leading-whitespace">    </span><span class="syntax--keyword syntax--control">return</span> scc<span class="syntax--punctuation syntax--terminator syntax--statement">;</span></span></span>
+<span class=""><span class="syntax--source syntax--cpp"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<h2>Тесты</h2>
+<h3>Аварийные ситуации</h3>
+<p>Ввод неверной команды.</p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Create digraph</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Load digraph</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Remove digraph</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. List digraphs</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; dumb</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">No such action</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<p>Ввод несуществующего файла.</p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Create digraph</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Load digraph</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Remove digraph</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. List digraphs</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 2</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Input filename</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; sa;dkflj</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">There is no such file</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<p>На следующем графе</p>
+<p><img src="digraph.png" alt="digraph"></p>
+<p>Ввод несуществующей вершины.</p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Digraph menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Display</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Add vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Add edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. Remove vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5. Remove edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6. Count SCC</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">7. Save as</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 4</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Input vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 10</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Invalid vertex</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<p>Ввод несуществующего ребра.</p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Digraph menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Display</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Add vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Add edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. Remove vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5. Remove edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6. Count SCC</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">7. Save as</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 5</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Input start vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 0</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Input finish vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 2</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">There is no such edge</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<p>Попытка дублирования ребра.</p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Digraph menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Display</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Add vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Add edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. Remove vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5. Remove edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6. Count SCC</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">7. Save as</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 3</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Input start vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 3</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Input finish vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 4</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Edge already exists</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<h3>Неаварийные ситуации</h3>
+<p>Не связный сильно граф.</p>
+<p><img src="digraph.png" alt="digraph"></p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Digraph menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Display</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Add vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Add edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. Remove vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5. Remove edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6. Count SCC</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">7. Save as</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 6</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Strongly connected components:</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0 2 1</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Graph isn't strongly connected</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<p>Не связный сильно граф.</p>
+<p><img src="digraph0.png" alt="digraph0"></p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Digraph menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Display</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Add vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Add edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. Remove vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5. Remove edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6. Count SCC</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">7. Save as</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 6</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Strongly connected components:</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5 6</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1 2</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4 3</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Graph isn't strongly connected</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<p>Сильно связный граф.</p>
+<p><img src="digraph1.png" alt="digraph1"></p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Digraph menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Display</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Add vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Add edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. Remove vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5. Remove edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6. Count SCC</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">7. Save as</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 6</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Strongly connected components:</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0 2 1</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Graph is strongly connected</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<p>Сильно связный граф.</p>
+<p><img src="digraph2.png" alt="digraph2"></p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Digraph menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Display</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Add vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Add edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. Remove vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5. Remove edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6. Count SCC</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">7. Save as</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 6</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Strongly connected components:</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0 2 1 3 4 5</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Graph is strongly connected</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<p>Не связный сильно граф.</p>
+<p><img src="digraph3.png" alt="digraph3"></p>
+<pre class="editor-colors lang-text"><span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Digraph menu:</span></span></span>
+<span class=""><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">1. Display</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">2. Add vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">3. Add edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">4. Remove vertex</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">5. Remove edge</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6. Count SCC</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">7. Save as</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0. Exit</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&gt;&gt;&gt; 6</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Strongly connected components:</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">6</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">0 2 1 3 4 5</span></span></span>
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Graph isn't strongly connected</span></span></span>
+<span></span> 
+<span><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">&lt;press Enter to continue&gt;</span></span></span></pre>
+<h2>Контрольные вопросы</h2>
+<ol>
+<li><em>Что такое граф?</em></li>
+</ol>
+<p>Граф — это конечное множество вершин и соединяющих их рёбер;</p>
+<span class="math"><script type="math/tex; mode=display">G=\{V,E\},
+</script></span>
+<p>где <span class="math"><script type="math/tex">V</script></span> — конечное непустое множество вершин, <span class="math"><script type="math/tex">E</script></span> — множество рёбер (пар
+вершин). Если ребра имеют направление, то граф называется ориентированным; если
+рёбра имеют вес, то граф называется взвешенным.</p>
+<ol start="2">
+<li><em>Как представляются графы в памяти?</em></li>
+</ol>
+<p>Существуют различные методы представления графов в программе. Матрица смежности
+<span class="math"><script type="math/tex">B_{n\times n}</script></span> – элемент <span class="math"><script type="math/tex">b_{ij}=1</script></span>, если существует ребро, связывающее вершины
+<span class="math"><script type="math/tex">i</script></span> и <span class="math"><script type="math/tex">j</script></span>, и равно <span class="math"><script type="math/tex">0</script></span>, если ребра не существует. Список смежностей – содержит
+для каждой вершины из множества вершин <span class="math"><script type="math/tex">V</script></span> список тех вершин, которые
+непосредственно связаны с ней. Входы в списки смежностей могут храниться в
+отдельной таблице, либо же каждая вершина может хранить свой список смежностей.</p>
+<ol start="3">
+<li><em>Какие операции возможны над графами?</em></li>
+</ol>
+<p>Добавление/удаление вершин или дуг, объединение графов, обход вершин, поиск
+различных путей: кратчайшего пути от вершины к вершине; кратчайшего пути от
+вершины ко всем остальным; кратчайших путей от каждой вершины к каждой; поиск
+эйлерова пути и гамильтонова пути, если таковые есть в графе.</p>
+<ol start="4">
+<li><em>Какие способы обхода графов существуют?</em></li>
+</ol>
+<p>Один из основных методов проектирования графовых алгоритмов – поиск в глубину.
+Начиная с некоторой вершины <span class="math"><script type="math/tex">v_0</script></span>, ищется смежная ей вершина <span class="math"><script type="math/tex">v</script></span>, для которой в
+свою очередь осуществляется поиск в глубину до тех пор, пока не встретится ранее
+просмотренная вершина, или не закончится список смежности вершины <span class="math"><script type="math/tex">v</script></span> (то есть
+вершина полностью обработана). Если нет новых вершин, смежных с <span class="math"><script type="math/tex">v</script></span>, то вершина
+<span class="math"><script type="math/tex">v</script></span> считается использованной, идёт возврат в вершину, из которой попали в
+вершину <span class="math"><script type="math/tex">v</script></span>, и процесс продолжается до тех пор, пока не получим <span class="math"><script type="math/tex">v=v_0</script></span>. При
+просмотре используется стек.</p>
+<p>Поиск в ширину – обработка вершины <span class="math"><script type="math/tex">v</script></span> осуществляется путём просмотра сразу всех
+«новых» соседей этой вершины, которые последовательно заносятся в очередь
+просмотра.</p>
+<p>Для поиска компонент сильной связности графа используются алгоритмы Косарайю,
+Габова и Тарьяна.</p>
+<ol start="5">
+<li><em>Где используются графовые структуры?</em></li>
+</ol>
+<p>Графовые структуры могут использоваться в задачах, в которых между элементами
+могут быть установлены произвольные связи, необязательно иерархические. Наиболее
+распространённым является использование графов при решении различных задач о
+путях, будь то построение коммуникационных линий между городами или прокладка
+маршрута на игровом поле.</p>
+<ol start="6">
+<li><em>Какие пути в графе Вы знаете?</em></li>
+</ol>
+<p>Путь в графе, проходящий через каждое ребро ровно один раз, называется эйлеровым
+путём; путь может проходить по некоторым вершинам несколько раз – в этом случае
+он является непростым.</p>
+<p>Путь, проходящий через каждую вершину ровно один раз, называется гамильтоновым
+путём. Как эйлеров, так и гамильтонов путь могут не существовать в некоторых
+графах.</p>
+<ol start="7">
+<li><em>Что такое каркасы графа?</em></li>
+</ol>
+<p>Каркас графа – дерево, в которое входят все вершины графа, и некоторые (не
+обязательно все) его рёбра.</p>
+<p>Для построения каркасов графа используются алгоритмы Крускала и Прима.</p>
+
+  </body>
+</html>

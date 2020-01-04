@@ -1,0 +1,360 @@
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art
+Egypt		98171	Cairo		Africa			Excursion	10 Nature
+France		68859	Paris		Eurasia			Excursion	423 Art
+Turkey		79463	Istanbul	Eurasia			Beach		Fall 25 20 2
+Australia	25968	Canberra	Australia		Sports		Surfing 80000
+Russia		146880	Moscow		Eurasia			Excursion	5624 History
+UK			67808	London		Eurasia			Excursion	2465 History
+USA			330604	Washington	North_America	Excursion	8951 History
+Italy		60421	Rome		Eurasia			Sports		Climbing 70000
+Korea		51635	Seoul		Eurasia			Beach		Summer 25 23 6
+China		1394500	Beijing		Eurasia			Excursion	1354 History
+Japan		126420	Tokyo		Eurasia			Sports		Surfing 4000
+Chile		17574	Santiago	South_America	Excursion	354 Art
+Greece		10768	Athens		Eurasia			Excursion	5240 History
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 28 26 9
+Venezuela	31828	Caracas		South_America	Excursion	120 Art
+Jamaica		2728	Kingston	South_America	Excursion	32 Nature
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Beach		Spring 35 30 5
+Peru		32162	Lima		South_America	Sports		Climbing 200000
+Netherlands	17260	Amsterdam	Eurasia			Excursion	246 Nature
+Switzerland	8508	Bern		Eurasia			Sports		Climbing 85500
+Bulgaria	7050	Sophia		Eurasia			Excursion	108 Nature
+Ecuador		17090	Quito		Eurasia			Beach		Fall 35 28 7
+Honduras	9012	Tegucigalpa	South_America	Excursion	10 Nature
+Spain		46659	Madrid		Eurasia			Excursion	2064 History
+Portugal	10291	Lisbon		Eurasia			Beach		Winter 35 25 3
+China		1394500	Beijing		Eurasia			Sports		Climbing 80000
+Japan		126420	Tokyo		Eurasia			Sports		Climbing 40000
+Chile		17574	Santiago	South_America	Sports		Climbing 30000
+Greece		10768	Athens		Eurasia			Excursion	1001 Art
+Thailand	71037	Bangkok		Eurasia			Sports		Surfing 1000
+Venezuela	31828	Caracas		South_America	Sports		Surfing 2500
+Jamaica		2728	Kingston	South_America	Sports		Surfing 500
+Belgium		11420	Brussels	Eurasia			Sports		Climbing 80000
+Cyprus		854		Nicosia		Eurasia			Excursion	54 Nature
+Peru		32162	Lima		South_America	Excursion	240 History
+Netherlands	17260	Amsterdam	Eurasia			Sports		Climbing 70000
+Switzerland	8508	Bern		Eurasia			Excursion	79 Art
+Turkey		79463	Istanbul	Eurasia			Sports		Surfing 2000
+Australia	25968	Canberra	Australia		Excursion	804 Art

@@ -1,0 +1,10 @@
+Russia		146880	Moscow		Eurasia			Excursion	1645 Nature
+Egypt		98171	Cairo		Africa			Excursion	90 History
+USA			330604	Washington	North_America	Excursion	8541 History
+France		68859	Paris		Eurasia			Excursion	421 Art
+Switzerland	8236	Bern		Eurasia			Sports		Climbing 4500
+Egypt		98171	Cairo		Africa			Beach		Winter 30 26 4
+Switzerland	8236	Bern		Eurasia			Sports		Alpine_skiing 4000
+Spain		46528	Madrid		Eurasia			Sports		Surfing 3200
+Germany		82850	Berlin		Eurasia			Sports		Alpine_skiing 3700
+Thailand	71037	Bangkok		Eurasia			Beach		Winter 30 26 5
